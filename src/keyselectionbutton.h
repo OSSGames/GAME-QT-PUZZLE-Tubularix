@@ -17,3 +17,36 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program. If not, see <http://www.gnu.org/licenses/>.
  ***************************************************************************/
+
+#ifndef KEYSELECTIONBUTTON_H
+#define KEYSELECTIONBUTTON_H
+
+#include <QPushButton>
+
+class KeySelectionButton : public QPushButton
+{
+Q_OBJECT
+public:
+	KeySelectionButton(QWidget *parent = 0);
+	int key() {return keyCode;}
+
+private slots:
+	void selectKey();
+
+private:
+	bool selecting;
+	QString previousKey;
+	int keyCode;
+
+protected:
+	void keyPressEvent(QKeyEvent *event);
+	void keyReleaseEvent(QKeyEvent *event);
+	void focusOutEvent(QFocusEvent *event);
+
+signals:
+	void keyIntroduced(QString name, int key);
+	void keyIntroductionRejected(bool value);
+	void introducingKey();
+};
+
+#endif // KEYSELECTIONBUTTON_H

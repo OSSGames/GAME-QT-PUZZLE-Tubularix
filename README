@@ -1,0 +1,99 @@
+About:
+======
+Tubularix is a free opensource game similar to Tetris seen from a tubular perspective. Game's rules and behavior are very similar to the Tetris ones. It's written in c++ with the Qt 4 libraries.
+The game can be run on GNU/Linux, Windows or Mac.
+
+You can find Tubularix's news, files and updates at:
+http://tubularix.sourceforge.net
+
+Please, send your comments, suggestions, etc. to <miguelescudero@users.sourceforge.net>
+
+Requirements:
+=============
+Qt 4.5 or higher.
+
+Instructions (WINDOWS):
+=======================
+You just need to uncompress the downloaded file, enter the game's directory and run tubularix.exe.
+
+Instructions (GNU/Linux):
+=========================
+If you downloaded a compiled version, you just need to uncompress the file, enter the game's directory and run tubularix.
+
+Compiling and running (GNU/Linux):
+==================================
+Uncompress the file
+Open a console, go to the game's directory and run:
+qmake (or qmake-qt4, depending on your distribution)
+make
+
+If compilation ends successfully, you can go to the game's directory and run tubularix.
+
+Installation (GNU/Linux):
+=========================
+Uncompress the file
+Open a console, go to the game's directory and run:
+qmake (or qmake-qt4, depending on your distribution)
+make
+sudo make install
+
+If installation ends succesfully, you can start tubularix directly from a console or launch it from any application launcher.
+
+Performance (GNU/Linux):
+========================
+You can run tubularix adding
+-graphicssystem raster
+in the command line (or in the tubularix.desktop file), and you'll hopefully get a big performance boost.
+
+OS/2 additional notes:
+======================
+Probably, in order to be able to save high scores correctly you will need to uncomment the lines from mainwindow.cpp that follow this commentary:
+//that may solve some QSetting problems in OS/2
+
+Game controls:
+==============
+Keyboard:
+---------
+Main:
+P to pause, R to restart game, F to switch between normal mode/full screen and ESC to exit full screen mode.
+
+Player 1 (right player):
+Left and right arrows to move, down arrow to move down faster, B to drop the piece, up arrow to rotate piece counter-clockwise and space to rotate clockwise.
+
+Player 2 (left player):
+A and D to move, S to move down faster, X to drop the piece, W to rotate piece counter-clockwise and Q to rotate clockwise.
+
+Mouse:
+------
+There are three types of mouse control. They can be activated in Options->Activate mouse movement.
+
+Permanent mouse control: the piece is moved with the mouse cursor, dropped with the left button, moved down with the mouse wheel, and rotated with the right button.
+
+Mouse control: the piece is moved with the mouse cursor (but first it must be grabbed with left button), dropped with the middle button and rotated with the right button.
+
+Mouse wheel control: the piece is moved with the mouse wheel, dropped with the left button and rotated with the right button.
+
+Network game:
+=============
+You can play a two player game over a local network or internet.
+First, the player who will act as the server will have to create the game opening the game type dialog, selecting create network game (server) and specifying the port that will be used for the game. That port should be opened in the firewall or nat of your system before you can start a game as a server.
+Once the server is ready, the second player should open the game type dialog, select connect to network game (client), enter the server's IP address and port, accept game type settings, wait a few seconds and hopefully the game will start.
+
+Configuration files (Windows):
+==============================
+Settings are stored in Windows registry at:
+HKEY_CURRENT_USER\Software\tubularix\tubularix
+HKEY_USERS\Software\tubularix\tubularix
+
+Configuration files (GNU/Linux):
+================================
+Configurations are stored at $HOME/.config/tubularix/tubularix.conf
+
+Languages:
+=========
+Tubularix is available in czech, english, galician and spanish.
+
+Credits:
+========
+Created and maintained by Miguel Escudero Gestal <miguelescudero@users.sourceforge.net>
+Czech translation: Pavel Fric http://fripohled.blogspot.com/

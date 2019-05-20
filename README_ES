@@ -1,0 +1,99 @@
+Presentación:
+=============
+Tubularix es un juego libre similar al Tetris visto desde una perspectiva tubular. Las reglas del juego son muy similares a las del Tetris. El juego está escrito en c++ con las librerías Qt 4.
+El juego puede ser ejecutado en GNU/Linux, Windows o Mac.
+
+Puedes encontrar noticias y actualizaciones de Tubularix en:
+http://tubularix.sourceforge.net
+
+Por favor, envía tus comentarios, sugerencias, críticas, etc. a <miguelescudero@users.sourceforge.net>
+
+Requisitos:
+===========
+Qt 4.5 o mayor.
+
+Instrucciones (WINDOWS):
+========================
+Solo tienes que descomprimir el archivo descargado, entrar en el directorio del juego y ejecutar tubularix.exe.
+
+Instrucciones (GNU/Linux):
+==========================
+Si descargaste una versión ya compilada, solo necesitas descomprimir el archivo, entrar en el directorio del juego y ejecutar tubularix.
+
+Compilación y ejecución (GNU/Linux):
+====================================
+Descomprime el archivo
+Abre una consola, vete al directorio principal del juego y ejecuta:
+qmake (o qmake-qt4, dependiendo de tu distribución)
+make
+
+Si la compilación termina satisfactoriamente, puedes ir al directorio principal del juego y ejecutar tubularix.
+
+Instalación (GNU/Linux):
+========================
+Descomprime el archivo
+Abre una consola, vete al directorio principal del juego y ejecuta:
+qmake (o qmake-qt4, dependiendo de tu distribución)
+make
+sudo make install
+
+Si la instalación termina satisfactoriamente, puedes iniciar tubularix directamente desde una consola o ejecutarlo desde cualquier lanzador de aplicaciones.
+
+Rendimiento (GNU/Linux):
+========================
+Puedes ejecutar tubularix añadiendo
+-graphicssystem raster
+en la línea de comandos (o en el archivo tubularix.desktop) y probablemente obtendrás una gran mejora en el rendimiento.
+
+Notas adicionales para OS/2:
+============================
+Probablemente, para que se guarden correctamente las mejores puntuaciones, debes descomentar las líneas en mainwindow.cpp que siguen al comentario:
+//that may solve some QSetting problems in OS/2
+
+Controles del juego:
+====================
+Teclado:
+--------
+Principales:
+P para pausar, R para reiniciar la partida, F para cambiar entre modo normal/pantalla completa y ESC para salir del modo de pantalla completa.
+
+Jugador 1 (jugador de la derecha):
+Flechas izquierda y derecha para mover, abajo para bajar la pieza rápidamente, B para soltar la pieza, arriba para rotar la pieza de forma antihoraria y espacio para rotar la pieza de forma horaria.
+
+Jugador 2 (jugador de la izquierda):
+A y D para mover, S para bajar la pieza rápidamente, X para soltar la pieza, W para rotar la pieza de forma antihoraria y Q para rotar la pieza de forma horaria.
+
+Ratón:
+------
+Hay tres tipos de control con el ratón, que pueden ser activados en Opciones->Activar movimiento con el ratón.
+
+Control permanente con el ratón: la pieza se mueve con el cursor del ratón, se suelta con el botón izquierdo, se baja con la rueda y se rota con el botón derecho.
+
+Control con el ratón: la pieza se mueve con el cursor del ratón (pero antes debe ser agarrada con el botón izquierdo), se suelta con el botón del medio y se rota con el botón derecho.
+
+Control con la rueda del ratón: la pieza se mueve con la rueda del ratón, se suelta con el botón izquierdo y se gira con el botón derecho.
+
+Juego en red:
+=============
+Puedes jugar al modo de dos jugadores en una red local o por internet.
+Primero, el jugador que actuará como servidor tendrá que crear la partida abriendo el diálogo de tipo de juego, seleccionado crear juego en red (servidor) y especificando el puerto que será utilizado para el juego. Este puerto deberá estar abierto en el cortafuegos o nat de tu sistema antes de que puedas iniciar una partida como servidor.
+Una vez que el servidor esté listo, el segundo jugador debe abrir el diálogo de tipo de juego, seleccionar conectarse a una partida en red (cliente), introducir la dirección IP y el puerto del servidor, aceptar la configuración del tipo de juego, y si todo va bien, la partida empezará en unos segundos.
+
+Archivos de configuración (Windows):
+====================================
+Las configuraciones se almacenan en el registro de Windows en:
+HKEY_CURRENT_USER\Software\tubularix\tubularix
+HKEY_USERS\Software\tubularix\tubularix
+
+Archivos de configuración (GNU/Linux):
+======================================
+Las configuraciones se almacenan en $HOME/.config/tubularix/tubularix.conf
+
+Idiomas:
+========
+Tubularix está disponible en checo, español, gallego e inglés.
+
+Creditos:
+=========
+Creado y mantenido por Miguel Escudero Gestal <miguelescudero@users.sourceforge.net>
+Traducción al checo: Pavel Fric http://fripohled.blogspot.com/

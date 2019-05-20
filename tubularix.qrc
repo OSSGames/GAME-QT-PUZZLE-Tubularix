@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/tubularix.png</file>
+        <file>icons/tubularix.ico</file>
+        <file>icons/configure.png</file>
+        <file>icons/games-config-options.png</file>
+        <file>icons/games-config-theme.png</file>
+        <file>icons/view-fullscreen.png</file>
+        <file>icons/view-statistics.png</file>
+        <file>icons/application-exit.png</file>
+        <file>icons/document-new.png</file>
+        <file>icons/games-highscores.png</file>
+        <file>icons/zoom-in.png</file>
+    </qresource>
+</RCC>

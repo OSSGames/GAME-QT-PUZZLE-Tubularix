@@ -1,0 +1,124 @@
+0.5.1.7 (2011-06-17)
+--------------------
+-Fixed a bug in the color selection that can make the game crash with some Qt versions.
+-Removed path from tubularix.desktop, which can cause the game not to start.
+-Added credits in about.
+-Some little bugfixes.
+
+0.5.1.5 (2010-10-12)
+--------------------
+-Color degradation configuration added in options dialog.
+-Apply button added in options dialog, mainly to allow color changes to be tested faster in the gameboard.
+-New color preset added.
+-AI for player 2 disabled in network game.
+-Help about mouse control and network game added.
+-Czech translation updated.
+-Some bugs fixed.
+
+0.5.0.1 (2010-09-07)
+--------------------
+-Network game added.
+-New mouse control types added.
+-New color preset added.
+-A lot of bugfixes and code cleanups.
+
+0.4.1.12 (2010-08-05)
+---------------------
+-Fixed a bug that caused gameboard to be hidden with some new versions of Qt.
+-Added mouse control. It must be activated in Options->Activate mouse movement. Piece is moved with the mouse wheel, dropped with the left key and rotated with the right key.
+-Added color presets in color configuration screen.
+
+0.4.0.8 (2010-05-09)
+--------------------
+-Fixed size and position setting that caused problems at least in windows xp.
+
+0.4.0.7 (2010-05-01)
+--------------------
+-Czech translation added thanks to Pavel Fric.
+-Tubularix icon attached to tubularix.exe.
+-Added more rotation styles and changed it's selection place to the options dialog, settings tab.
+-Selected rotation style is saved for next execution.
+
+0.4.0.3 (2010-04-23)
+--------------------
+-Added the possibility to drop the piece (B key for player 1, X key for player 2).
+-Performance greatly improved thanks to repainting only changes, instead of all the gameboard, so now the game is perfectly playable with antialias activated.
+-Added a basic ai, activable in the options menu for every player, so now it's possible to play against computer or set tubularix in demo mode for one or two players.
+-Added an option to change rotation mode to classic tetris.
+-Added an option in game type selection to give the same pieces to both players or not.
+-Added an option in game type selection to send one line to the oponent's scenario every two destroyed lines.
+-Changed predefined size of tetris mode to 23x10.
+-Added a splitter between the two gameboards to make them redimensionable.
+-Some oxygen icons added.
+-Lots of bugs fixed.
+
+0.2.7.0 (2009-09-20)
+--------------------
+-Added an option to change pieces and background colors.
+-Ghost piece added, with an option to activate/deactivate it. Especially useful for new players.
+-Full screen mode available with borders, menu and toolbar hidden. When mouse is at the top of the screen, toolbar is shown.
+-Added score counters in the two player game mode.
+-Added an option to choose between dropping the pieces gradually or instantaneously.
+-Mouse cursor hiding improved.
+-Aspect ratio maintained while resizing game window.
+-Game board size increased a little, to make everything easier to see, especially in two player mode.
+-Default background color changed, so eyes will get a little less tyred.
+-No longer needed to run qmake twice to install, only the typical qmake && make && sudo make install.
+-Files and directories reorganized.
+
+0.2.0.1 (2009-07-24)
+--------------------
+-Windows version avaliable.
+-New options dialog. Now it's possible to change game keys and key repetition settings.
+-Added an option to set a custom number of rows and/or columns. If custom mode is selected, high scores for that mode are stored separately.
+-Added readme in spanish.
+-A lot of little bugs fixed.
+
+0.1.7.1 (2009-06-24)
+--------------------
+-Line destruction animation added.
+-Window resizes automatically when number of players is changed, and settings for each size are stored separately.
+-Piece's shadow added in all game modes.
+-Fixed colision detection bug.
+-Mouse coursor now hides over the gameboard.
+-Improved piece dropping place in all game modes.
+
+0.1.5.2 (2009-05-22)
+--------------------
+-Fixed a bug that made game lose focus if game screen is clicked.
+-Improved game control.
+-Added tetris game modes, normal or reversed and with or without walls.
+-Game type selection dialog added, with 6 game modes for one or two players.
+-Added the posibility to choose the start level.
+-Now dropping down fast a piece increases score.
+-Individual high scores table for each game mode.
+-Improved two player gameplay.
+-Added videos on youtube to show game modes and two player gaming.
+
+0.1.3.2 (2009-04-02)
+--------------------
+-Fixed translations path again so you can run the game directly from any filebrowser and translations should load well.
+-Game icon added.
+-Improved tubularix.pro so you can install the game.
+
+0.1.3.1 (2009-03-31)
+--------------------
+-Piece generation fixed.
+-About box added including game controls.
+-Added an option to show/hide map.
+-Added an option to reverse gameboard.
+-Added an option for two player gaming.
+-Changed number of rows from 14 to 18.
+-Added a script to make tubularix.desktop whith the right path.
+-Translations path fixed.
+-Translations updated.
+-Packages for openSUSE in PackMan repository thanks to Toni Graffy <toni@links2linux.de>.
+-A lot of minor bugfixes.
+
+0.1.2.0 (2009-03-25)
+--------------------
+-First public release.
+-Game working properly.
+-Window resizing works fine.
+-High scores.
+-English, spanish and galician translations.

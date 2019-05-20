@@ -1,0 +1,15 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Game;BlocksGame;
+#Encoding=UTF-8
+Type=Application
+Exec=tubularix
+#Path=tubularix
+Icon=tubularix
+Terminal=false
+Name[es]=Tubularix
+Name=Tubularix
+GenericName[es]=Tubularix
+GenericName=Tubularix
+Comment[es]=Tubularix es un juego tipo Tetris con perspectiva tubular
+Comment=Tubularix is a game similar to Tetris with a tubular perspective

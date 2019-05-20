@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>120</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Tubularix</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../tubularix.qrc">
+    <normaloff>:/icons/tubularix.png</normaloff>:/icons/tubularix.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>580</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>&amp;Game</string>
+    </property>
+    <addaction name="actionNewGame"/>
+    <addaction name="actionShowHighScores"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionControlHelp"/>
+    <addaction name="actionNetworkGameHelp"/>
+    <addaction name="separator"/>
+    <addaction name="actionAboutTubularix"/>
+    <addaction name="actionAboutQt"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <widget class="QMenu" name="menuActivateMouseMovement">
+     <property name="title">
+      <string>Activate mouse mo&amp;vement</string>
+     </property>
+     <addaction name="actionNoMouseControl"/>
+     <addaction name="actionActivatePermanentMouseControl"/>
+     <addaction name="actionActivateMouseControl"/>
+     <addaction name="actionActivateMouseWheelControl"/>
+    </widget>
+    <addaction name="actionSelectGameType"/>
+    <addaction name="actionGameOptions"/>
+    <addaction name="actionSelectLanguage"/>
+    <addaction name="separator"/>
+    <addaction name="actionPiecesAppearingGradually"/>
+    <addaction name="actionShowGhostPiece"/>
+    <addaction name="actionShowMap"/>
+    <addaction name="separator"/>
+    <addaction name="actionActivateAiPlayer1"/>
+    <addaction name="actionActivateAiPlayer2"/>
+    <addaction name="menuActivateMouseMovement"/>
+    <addaction name="separator"/>
+    <addaction name="actionFullScreen"/>
+    <addaction name="actionActivateAntialiasing"/>
+    <addaction name="separator"/>
+    <addaction name="actionRestoreSizeSettings"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>Main toolbar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>22</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNewGame"/>
+   <addaction name="actionSelectGameType"/>
+   <addaction name="actionGameOptions"/>
+   <addaction name="actionFullScreen"/>
+   <addaction name="actionShowHighScores"/>
+  </widget>
+  <action name="actionQuit">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../tubularix.qrc">
+     <normaloff>:/icons/application-exit.png</normaloff>:/icons/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionActivateAntialiasing">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Activate &amp;antialiasing</string>
+   </property>
+  </action>
+  <action name="actionShowHighScores">
+   <property name="icon">
+    <iconset resource="../tubularix.qrc">
+     <normaloff>:/icons/view-statistics.png</normaloff>:/icons/view-statistics.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show &amp;high scores</string>
+   </property>
+  </action>
+  <action name="actionNewGame">
+   <property name="icon">
+    <iconset resource="../tubularix.qrc">
+     <normaloff>:/icons/document-new.png</normaloff>:/icons/document-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New game</string>
+   </property>
+  </action>
+  <action name="actionRestoreSizeSettings">
+   <property name="text">
+    <string>Restore &amp;size settings</string>
+   </property>
+  </action>
+  <action name="actionSelectLanguage">
+   <property name="text">
+    <string>Select &amp;language</string>
+   </property>
+  </action>
+  <action name="actionAboutTubularix">
+   <property name="text">
+    <string>&amp;About tubularix</string>
+   </property>
+  </action>
+  <action name="actionShowMap">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show &amp;map</string>
+   </property>
+  </action>
+  <action name="actionSelectGameType">
+   <property name="icon">
+    <iconset resource="../tubularix.qrc">
+     <normaloff>:/icons/games-config-theme.png</normaloff>:/icons/games-config-theme.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select &amp;game type</string>
+   </property>
+  </action>
+  <action name="actionGameOptions">
+   <property name="icon">
+    <iconset resource="../tubularix.qrc">
+     <normaloff>:/icons/games-config-options.png</normaloff>:/icons/games-config-options.png</iconset>
+   </property>
+   <property name="text">
+    <string>Game &amp;options</string>
+   </property>
+  </action>
+  <action name="actionFullScreen">
+   <property name="icon">
+    <iconset resource="../tubularix.qrc">
+     <normaloff>:/icons/view-fullscreen.png</normaloff>:/icons/view-fullscreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Full screen</string>
+   </property>
+  </action>
+  <action name="actionPiecesAppearingGradually">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Pieces appearing gradually</string>
+   </property>
+  </action>
+  <action name="actionShowGhostPiece">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Sho&amp;w ghost piece</string>
+   </property>
+  </action>
+  <action name="actionActivateAiPlayer1">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Activate AI Player &amp;1</string>
+   </property>
+  </action>
+  <action name="actionActivateAiPlayer2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Activate AI Player &amp;2</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+  <action name="actionActivateMouseControl">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Activate mo&amp;use control</string>
+   </property>
+  </action>
+  <action name="actionActivateMouseWheelControl">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Activate mouse w&amp;heel control</string>
+   </property>
+  </action>
+  <action name="actionNoMouseControl">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;No mouse control</string>
+   </property>
+  </action>
+  <action name="actionActivatePermanentMouseControl">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Activate &amp;permanent mouse control</string>
+   </property>
+  </action>
+  <action name="actionControlHelp">
+   <property name="text">
+    <string>&amp;Control help</string>
+   </property>
+  </action>
+  <action name="actionNetworkGameHelp">
+   <property name="text">
+    <string>Network &amp;game help</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../tubularix.qrc"/>
+ </resources>
+ <connections/>
+</ui>

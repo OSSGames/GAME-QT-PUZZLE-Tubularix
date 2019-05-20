@@ -17,3 +17,33 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program. If not, see <http://www.gnu.org/licenses/>.
  ***************************************************************************/
+
+#ifndef NETWORKCLIENTDIALOG_H
+#define NETWORKCLIENTDIALOG_H
+
+#include <QtGui/QDialog>
+
+namespace Ui {
+    class NetworkClientDialog;
+}
+
+class NetworkClientDialog : public QDialog {
+    Q_OBJECT
+public:
+    NetworkClientDialog(QWidget *parent = 0);
+    ~NetworkClientDialog();
+
+private:
+	Ui::NetworkClientDialog *m_ui;
+
+private slots:
+	void readSettings();
+	void writeSettings();
+	void acceptChanges();
+	void rejectChanges();
+
+protected:
+    void changeEvent(QEvent *e);
+};
+
+#endif // NETWORKCLIENTDIALOG_H
